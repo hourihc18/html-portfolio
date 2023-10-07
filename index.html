@@ -1,40 +1,131 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conner Portfolio</title>
+<title>Resume</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+   
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
 <body>
-<h1> Conner Portfolio</h1>
-<h2>This is a page about Conner</h2>
-<hr />
 
+<header>
+  <h2>Conner Hourihan</h2>
+</header>
 
+<section>
+  <nav>
+    <ul>
+      <li><a href="#Experience">Experience</a></li>
+      <li><a href="#Education">Education</a></li>
+      <li><a href="#Certificates">Certificates</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1><a id="Experience">Experience</a></h1>
+        <h4>Technical Project Manager -</h4>
+        <h5><i>August 2022 - present</i></h5>
+            <ul><li>Manage 20-30 IT projects at a time, each project ranging from $5K to $100K.</li>
+            <li>Develop and manage end to end project plans including scope, schedule, resource management, budget, quality, communications, risk, vendor management, milestones, success criteria, stakeholder expectations, and performing retrospectives to drive improvement.</li>
+            <li>Monitor progress throughout project lifecycle making necessary adjustments.</li>
+            <li>Work with product development to discuss current and new product features and how it relates to end user.</li>
+            </ul>
+        <h4>Project Manager - Oracle</h4>
+        <h5><i>August 2022 - August 2022</i></h5>
+            <ul><li>Manage 20-30 IT projects at a time, each project ranging from $5K to $100K.</li>
+            <li>Develop and manage end to end project plans including scope, schedule, resource management, budget, quality, communications, risk, vendor management, milestones, success criteria, stakeholder expectations, and performing retrospectives to drive improvement.</li>
+            <li>Monitor progress throughout project lifecycle making necessary adjustments.</li>
+            <li>Work with product development to discuss current and new product features and how it relates to end user.</li>
+            </ul>
+        
+    <h1><a id="Education">Education</a></h1>
+        <h4>University at Buffalo</h4>
+        <p>B.S. in Business Administration
+            <br>May 2011</p>
+        <h4>University of Phoenix</h4>
+        <p>Masters in Business Administration (MBA)
+            <br>May 2015</p>
 
-<h3><a href="./public/birthday-invite.html">Birthday Invite</a></h3>
-<img src="./assets/images/Birthday.png" height="200" alt="Birthday project preview"/>
-<h3><a href="./public/movie-ranking.html">Movie Ranking</a></h3>
-<img src="./assets/images/movie.png" height="200" alt="movie ranking project preview"/>  
-<hr />
-<a href="./public/contact.html">Contact Me</a> 
-<a href="./public/about.html">About Me</a>
+    <h1><a id="Certificates">Certificates</a></h1>
+        <h4>Project Management Professional (PMP)</h4>
+            <p>Project Management Institute
+                <br>June 2021</p>
+        <h4>Lean Six Sigma Green Belt</h4>
+            <p>Lean Sigma Corp.
+                <br>July 2021</p>
+        <h4>Professional Scrum Master I</h4>
+            <p>Scrum.org
+                <br>June 2022</p>
+                
+  </article>
+</section>
+
+<footer>
+  <p>connerhourihan18@gmail.com</p>
+</footer>
+
 </body>
 </html>
+
